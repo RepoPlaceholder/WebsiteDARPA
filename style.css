@@ -21,6 +21,15 @@ body {
   object-position: 100% center;
 }
 
+.image {
+  transition: transform .2s, box-shadow .2s;
+}
+
+.image:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 100px 1em black;
+  /* box-shadow: 0px 0px 50px 5px #00008B; */ /* dark blue */
+}
 .overlay {
   position: absolute;
   top: 0;
@@ -32,11 +41,6 @@ body {
   opacity: 0;
   transition: .5s ease;
   background-color: #008CBA;
-}
-
-img:hover {
-  filter: blur(2px);
-  
 }
 
 /* css grid settings (easy alignment)*/
