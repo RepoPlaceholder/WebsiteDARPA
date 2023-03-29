@@ -1,8 +1,5 @@
 body {
-  height: 100vh;
-  width: 100vw;
-  background-color: black;
-  margin: 0rem;
+  background-image:black;
   overflow: hidden;
 }
 
@@ -38,7 +35,8 @@ body {
 }
 
 img:hover {
-  filter: blur(4px);
+  filter: blur(2px);
+  
 }
 
 /* css grid settings (easy alignment)*/
