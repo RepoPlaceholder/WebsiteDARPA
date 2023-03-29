@@ -1,5 +1,5 @@
 body {
-  background-image: ;
+  background-image:black;
   overflow: hidden;
 }
 
@@ -20,6 +20,6 @@ body {
   object-position: 100% center;
 }
 img:hover {
-  filter: blur(4px);
+  filter: blur(2px);
   
 }
