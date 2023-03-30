@@ -45,9 +45,9 @@ window.onmousemove = e => handleOnMove(e);
 window.ontouchmove = e => handleOnMove(e.touches[0]);
 
 
-const scrollContainer = document.getElementById("image-track");
+// const scrollContainer = document.getElementById("image-track");
 
-scrollContainer.addEventListener('wheel', (evt) => {
-  evt.preventDefault();
-  scrollContainer.scrollLeft += evt.deltaY;
-});
+// scrollContainer.addEventListener('wheel', (evt) => {
+//   evt.preventDefault();
+//   scrollContainer.scrollLeft += evt.deltaY;
+// });
