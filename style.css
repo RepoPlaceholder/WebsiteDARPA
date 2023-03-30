@@ -1,7 +1,20 @@
 /* main body settings */
 body {
-  background-color:black;
+  background-color: black;
   overflow: hidden;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.noBar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.noBar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 #image-track {
@@ -12,7 +25,11 @@ body {
   right: 27%;
   top: 50%;
   transform: translate(0%, -50%);
-  user-select: none; /* -- Prevent image highlighting -- */
+  user-select: none;
+  /* -- Prevent image highlighting -- */
+
+  /* overflow-x: scroll;
+  scroll-behavior: smooth; */
 }
 
 /* #image-trackimage {
@@ -48,14 +65,17 @@ body {
   opacity: 0;
   transform: scale(0.3);
 }
+
 .show {
   opacity: 1;
   transform: scale(1);
 }
 
 .image {
-  transition: transform .2s, box-shadow .2s; /* hover animation */
-  animation: cardEntrance 300ms ease-out; /* intro animation time */
+  transition: transform .2s, box-shadow .2s;
+  /* hover animation */
+  animation: cardEntrance 300ms ease-out;
+  /* intro animation time */
   animation-fill-mode: backwards;
 }
 
@@ -65,30 +85,37 @@ body {
   /* transition-delay: calc(1 * var(--stagger-delay)); */
   transition-delay: 100;
 }
+
 .image:nth-child(2) {
   /* transition-delay: calc(2 * var(--stagger-delay)); */
   transition-delay: 200;
 }
+
 .image:nth-child(3) {
   /* transition-delay: calc(3 * var(--stagger-delay)); */
   transition-delay: 300;
 }
+
 .image:nth-child(4) {
   /* transition-delay: calc(4 * var(--stagger-delay)); */
   transition-delay: 400;
 }
+
 .image:nth-child(5) {
   /* transition-delay: calc(5 * var(--stagger-delay)); */
   transition-delay: 500;
 }
+
 .image:nth-child(6) {
   /* transition-delay: calc(6 * var(--stagger-delay)); */
   transition-delay: 600;
 }
+
 .image:nth-child(7) {
   /* transition-delay: calc(7 * var(--stagger-delay)); */
   transition-delay: 700;
 }
+
 .image:nth-child(8) {
   /* transition-delay: calc(8 * var(--stagger-delay)); */
   transition-delay: 800;
@@ -98,7 +125,8 @@ body {
 .image:hover {
   transform: scale(1.05);
   box-shadow: 0px 0px 100px 1em black;
-  /* box-shadow: 0px 0px 50px 5px #00008B; */ /* dark blue */
+  /* box-shadow: 0px 0px 50px 5px #00008B; */
+  /* dark blue */
 }
 
 /* home page grid settings */
@@ -118,7 +146,8 @@ body {
     'middleTitle'
     'image-scroll';
 
-  --stagger-delay: 50ms; /* the delay between each card */
+  --stagger-delay: 50ms;
+  /* the delay between each card */
 }
 
 /* .overlay {
