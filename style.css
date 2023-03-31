@@ -1,6 +1,10 @@
 /* main body settings */
 body {
-  background-color: black;
+  width: 100vw;
+  height:100vh;
+  background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.73)),url("modern-white-background-free-vector.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   overflow: hidden;
 }
 
