@@ -62,8 +62,10 @@ body::-webkit-scrollbar {
 } */
 
 .image2 {
-  width: 40vmin;
-  height: 56vmin;
+  /* width: 40vmin; */
+  /* height: 56vmin; */
+  height: 75vh;
+  width: 50vh;
   object-fit: cover;
   object-position: 100% center;
 }
